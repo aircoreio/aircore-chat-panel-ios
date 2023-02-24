@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chat.roomCard.membersCount</key>
+	<dict>
+		<key>members</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string>Mo members</string>
+			<key>one</key>
+			<string>1 member</string>
+			<key>other</key>
+			<string>%u members</string>
+		</dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@members@</string>
+	</dict>
+	<key>chat.row.replyCount</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%@ %#@replies@</string>
+		<key>replies</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string>replies</string>
+			<key>one</key>
+			<string>reply</string>
+			<key>other</key>
+			<string>replies</string>
+		</dict>
+	</dict>
+	<key>chat.row.media.youtube_playlist_items_count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@video_or_videos@</string>
+		<key>video_or_videos</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string>No videos</string>
+			<key>one</key>
+			<string>%u video</string>
+			<key>other</key>
+			<string>%u videos</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,166 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AircorePresenceCore
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import AircorePresenceCore
+import Combine
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import presence
+public enum PresenceAuth {
+  case pak(_: Swift.String, userID: Swift.String, channelID: Swift.String)
+  case sat(_: Swift.String, userID: Swift.String)
+}
+public enum Environment {
+  case staging
+  case prod
+  public var provisioningServiceURL: Swift.String {
+    get
+  }
+  public var apiURL: Swift.String {
+    get
+  }
+  public static func == (a: AircorePresenceCore.Environment, b: AircorePresenceCore.Environment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+final public class LinkPresenceEngine : AircorePresenceCore.PresenceEngine {
+  final public let environment: AircorePresenceCore.Environment
+  final public let auth: AircorePresenceCore.PresenceAuth
+  final public let name: Swift.String
+  final public let avatarURL: Foundation.URL?
+  final public let canPublishAudio: Swift.Bool
+  public init(environment: AircorePresenceCore.Environment = .prod, auth: AircorePresenceCore.PresenceAuth, name: Swift.String, avatarURL: Foundation.URL?, canPublishAudio: Swift.Bool = true)
+  override final public func start()
+  override final public func stop()
+  @objc deinit
+}
+extension AircorePresenceCore.LinkPresenceEngine : presence.PresenceListener {
+  @objc final public func onUpdate(result: presence.CommonResource<presence.Result>)
+  @objc final public func onTokenExpired()
+  @objc final public func onTokenInvalid()
+  @objc final public func onTokenNearingExpiry(duration: Swift.Int32)
+  @objc final public func onError(status: presence.KotlinInt?, code: Swift.String?, message: Swift.String?)
+  @objc final public func onToken(token: Swift.String, expiresAt: presence.KotlinInt?)
+  @objc final public func onLoading()
+  @objc final public func onSuccess(data: Any?)
+}
+final public class PresenceUser : Swift.Identifiable, Swift.Hashable {
+  final public let id: Swift.String
+  @Combine.Published @_projectedValueProperty($name) final public var name: Swift.String {
+    get
+    set
+    _modify
+  }
+  final public var $name: Combine.Published<Swift.String>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($avatarURL) final public var avatarURL: Foundation.URL? {
+    get
+    set
+    _modify
+  }
+  final public var $avatarURL: Combine.Published<Foundation.URL?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($joinedSessionAt) final public var joinedSessionAt: Foundation.Date {
+    get
+    set
+    _modify
+  }
+  final public var $joinedSessionAt: Combine.Published<Foundation.Date>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($canPublishAudio) final public var canPublishAudio: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  final public var $canPublishAudio: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($isPublishing) final public var isPublishing: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  final public var $isPublishing: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init(id: Swift.String, name: Swift.String, avatarURL: Foundation.URL? = nil, canPublishAudio: Swift.Bool, joinedSessionAt: Foundation.Date = Date(), isPublishing: Swift.Bool = false)
+  public static func == (lhs: AircorePresenceCore.PresenceUser, rhs: AircorePresenceCore.PresenceUser) -> Swift.Bool
+  final public func hash(into hasher: inout Swift.Hasher)
+  public typealias ID = Swift.String
+  @objc deinit
+  final public var hashValue: Swift.Int {
+    get
+  }
+}
+extension AircorePresenceCore.PresenceUser : Swift.CustomDebugStringConvertible {
+  final public var debugDescription: Swift.String {
+    get
+  }
+}
+open class PresenceEngine {
+  public enum Event : Swift.CustomDebugStringConvertible {
+    case userJoined(AircorePresenceCore.PresenceUser)
+    case userLeft(AircorePresenceCore.PresenceUser.ID)
+    case userMetadataUpdated(AircorePresenceCore.PresenceUser)
+    case tokenExpired
+    case tokenInvalid
+    case tokenNearingExpiry(Swift.Int32)
+    case onError(Swift.String?, Swift.String?)
+    public var debugDescription: Swift.String {
+      get
+    }
+  }
+  public enum Action : Swift.CustomDebugStringConvertible {
+    case setOnline
+    case setOffline
+    case updateName(_: Swift.String)
+    case updateAvatarURL(_: Foundation.URL?)
+    case updateCanPublishAudio(_: Swift.Bool)
+    case setMetadata(key: Swift.String, value: Swift.String)
+    case updateSessionAccessToken(_: Swift.String)
+    case getLatestMetadata(userID: Swift.String, completion: (Swift.Result<AircorePresenceCore.PresenceUser, Swift.Error>) -> Swift.Void)
+    public var debugDescription: Swift.String {
+      get
+    }
+  }
+  public init()
+  final public let events: Combine.PassthroughSubject<AircorePresenceCore.PresenceEngine.Event, Swift.Never>
+  final public let actions: Combine.PassthroughSubject<AircorePresenceCore.PresenceEngine.Action, Swift.Never>
+  public func start()
+  public func stop()
+  @objc deinit
+}
+final public class PresenceGroup {
+  @Combine.Published @_projectedValueProperty($users) final public var users: Swift.Set<AircorePresenceCore.PresenceUser> {
+    get
+    set
+    _modify
+  }
+  final public var $users: Combine.Published<Swift.Set<AircorePresenceCore.PresenceUser>>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init(users: Swift.Set<AircorePresenceCore.PresenceUser> = [], engine: AircorePresenceCore.PresenceEngine)
+  @objc deinit
+}
+extension AircorePresenceCore.Environment : Swift.Equatable {}
+extension AircorePresenceCore.Environment : Swift.Hashable {}

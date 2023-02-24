@@ -1,0 +1,11 @@
+framework module AircorePresenceCore {
+  umbrella header "AircorePresenceCore.h"
+
+  export *
+  module * { export * }
+}
+
+module AircorePresenceCore.Swift {
+  header "AircorePresenceCore-Swift.h"
+  requires objc
+}

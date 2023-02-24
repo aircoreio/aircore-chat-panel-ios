@@ -1,0 +1,254 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AircoreChatPanel
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import AircoreChatPanel
+import AircoreLogging
+import Combine
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+public enum ClientError : Foundation.LocalizedError {
+  case notConnected
+  case clientAlreadyDestroyed
+  case missingUserData
+  case customError(message: Swift.String)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public struct ChatAuth {
+  public enum AuthType {
+    case pak, sat
+    public static func == (a: AircoreChatPanel.ChatAuth.AuthType, b: AircoreChatPanel.ChatAuth.AuthType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var authType: AircoreChatPanel.ChatAuth.AuthType
+  public var token: Swift.String
+  public var userID: Swift.String
+  public var channelID: Swift.String
+}
+public enum ChatEnvironment {
+  case staging
+  case prod
+  public var provisioningServiceURL: Swift.String {
+    get
+  }
+  public var apiURL: Swift.String {
+    get
+  }
+  public static func == (a: AircoreChatPanel.ChatEnvironment, b: AircoreChatPanel.ChatEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Combine.Publisher {
+  public func asFuture() -> Combine.Future<Self.Output, Self.Failure>
+}
+@objc(AIRChatClientEvent) public enum ClientEvent : Swift.Int, Swift.CaseIterable {
+  case publishableAPIKeyInvalid
+  case sessionAuthTokenInvalid
+  case sessionAuthTokenMismatch
+  case sessionAuthTokenNearingExpiry
+  case localUserJoined
+  case localUserLeft
+  case remoteUserJoined
+  case remoteUserLeft
+  case localMessageSent
+  case localMessageSendFailed
+  case remoteMessageReceived
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [AircoreChatPanel.ClientEvent]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [AircoreChatPanel.ClientEvent] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(AIRChatClientLogLevel) public enum ClientLogLevel : Swift.Int {
+  case debug
+  case info
+  case warning
+  case error
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objcMembers @objc(AIRChatClient) public class Client : ObjectiveC.NSObject {
+  public typealias EventHandler = (_ channelID: Swift.String, _ userID: Swift.String) -> Swift.Void
+  public typealias ErrorHandler = (_ channelID: Swift.String?, _ error: Swift.Error) -> Swift.Void
+  @objc public var authToken: Swift.String? {
+    @objc get
+  }
+  @objc public var logLevel: AircoreChatPanel.ClientLogLevel
+  @objc final public let userID: Swift.String
+  @objc public var userDisplayName: Swift.String?
+  @objc public var userAvatarURL: Foundation.URL?
+  @objc public static func create(publishableKey: Swift.String, userID: Swift.String) -> AircoreChatPanel.Client
+  @objc public static func create(authToken: Swift.String, userID: Swift.String) -> AircoreChatPanel.Client
+  @objc public func updateAuthToken(_ token: Swift.String, forChannelID channelID: Swift.String)
+  @objc public func on(_ event: AircoreChatPanel.ClientEvent, handler: @escaping AircoreChatPanel.Client.EventHandler)
+  @objc public func off(_ event: AircoreChatPanel.ClientEvent)
+  @objc public func onError(handler: @escaping AircoreChatPanel.Client.ErrorHandler)
+  @objc(connectToChannelID:) public func connect(channelID: Swift.String)
+  @objc public func disconnect(fromChannelID channelID: Swift.String)
+  @objc public func destroy()
+  @objc public static var frameworkVersion: Swift.String {
+    @objc get
+  }
+  @objc public func setLogDirPath(_ value: Swift.String)
+  @objc deinit
+}
+@objc(AIRChatPanelStyle) public enum ChatPanelStyle : Swift.Int {
+  case widget
+  case bottomBar
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(AIRChatPanel) public class ChatPanel : ObjectiveC.NSObject {
+  @objc public init(client: AircoreChatPanel.Client, channelID: Swift.String, configuration: AircoreChatPanel.ChatPanelConfiguration, theme: AircoreChatPanel.Theme)
+  @objc public func present(in viewController: UIKit.UIViewController, style: AircoreChatPanel.ChatPanelStyle)
+  @objc public func destroy()
+  @objc deinit
+}
+@objc(AIRChatTheme) @objcMembers public class Theme : ObjectiveC.NSObject {
+  @_hasMissingDesignatedInitializers @objc(AIRChatBorderShape) @objcMembers public class BorderShape : ObjectiveC.NSObject {
+    public var radius: CoreFoundation.CGFloat?
+    @objc public var isCircle: Swift.Bool
+    @objc public static func rounded(_ radius: CoreFoundation.CGFloat) -> AircoreChatPanel.Theme.BorderShape
+    @objc public static func circle() -> AircoreChatPanel.Theme.BorderShape
+    @objc deinit
+  }
+  @objc(AIRChatBubbleTheme) @objcMembers public class BubbleTheme : ObjectiveC.NSObject {
+    @objc public var backgroundColor: UIKit.UIColor
+    @objc public var backgroundContrastColor: UIKit.UIColor
+    @objc public var borderColor: UIKit.UIColor
+    @objc public var userNameColor: UIKit.UIColor
+    @objc public init(backgroundColor: UIKit.UIColor? = nil, backgroundContrastColor: UIKit.UIColor? = nil, borderColor: UIKit.UIColor? = nil, userNameColor: UIKit.UIColor? = nil)
+    @objc deinit
+  }
+  @objc public init(backgroundColor: UIKit.UIColor? = nil, primaryColor: UIKit.UIColor? = nil, dangerColor: UIKit.UIColor? = nil, borderRadius: CoreFoundation.CGFloat = 18.0, borderWidth: CoreFoundation.CGFloat = 1.0, borderColor: UIKit.UIColor? = nil, fontFamily: UIKit.UIFont? = nil, textColor: UIKit.UIColor? = nil, subtextColor: UIKit.UIColor? = nil, primaryContrastColor: UIKit.UIColor? = nil, dangerContrastColor: UIKit.UIColor? = nil, avatar: AircoreChatPanel.Theme.Avatar? = nil, icons: AircoreChatPanel.Theme.Icons? = nil, incomingBubble: AircoreChatPanel.Theme.BubbleTheme? = nil, outgoingBubble: AircoreChatPanel.Theme.BubbleTheme? = nil)
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc public var primaryColor: UIKit.UIColor
+  @objc public var dangerColor: UIKit.UIColor
+  @objc public var borderRadius: CoreFoundation.CGFloat
+  @objc public var borderWidth: CoreFoundation.CGFloat
+  @objc public var borderColor: UIKit.UIColor
+  @objc public var fontFamily: UIKit.UIFont
+  @objc public var textColor: UIKit.UIColor
+  @objc public var subtextColor: UIKit.UIColor
+  @objc public var primaryContrastColor: UIKit.UIColor
+  @objc public var dangerContrastColor: UIKit.UIColor
+  @objc(AIRAvatar) @objcMembers public class Avatar : ObjectiveC.NSObject {
+    @objc public var background: UIKit.UIColor
+    @objc public var borderShape: AircoreChatPanel.Theme.BorderShape
+    @objc public var spacing: CoreFoundation.CGFloat
+    @objc public init(background: UIKit.UIColor? = nil, borderShape: AircoreChatPanel.Theme.BorderShape? = nil, spacing: CoreFoundation.CGFloat = -4)
+    @objc deinit
+  }
+  @objc public var avatar: AircoreChatPanel.Theme.Avatar
+  @objc(AIRChatIcons) @objcMembers public class Icons : ObjectiveC.NSObject {
+    @objc public var collapseIcon: UIKit.UIImage?
+    @objc public var infoIcon: UIKit.UIImage?
+    @objc public var leaveChatIcon: UIKit.UIImage?
+    @objc public init(collapseIcon: UIKit.UIImage? = nil, infoIcon: UIKit.UIImage? = nil, leaveChatIcon: UIKit.UIImage? = nil)
+    @objc deinit
+  }
+  @objc public var icons: AircoreChatPanel.Theme.Icons
+  @objc public var incomingBubble: AircoreChatPanel.Theme.BubbleTheme
+  @objc public var outgoingBubble: AircoreChatPanel.Theme.BubbleTheme
+  @objc deinit
+}
+extension AircoreChatPanel.Theme {
+  @objc public static func light() -> AircoreChatPanel.Theme
+  @objc public static func dark() -> AircoreChatPanel.Theme
+}
+extension UIKit.UIColor {
+  @objc(hexString:) public static func hexString(_ hexString: Swift.String) -> UIKit.UIColor
+  @objc public static func hex(_ hex: Swift.Int) -> UIKit.UIColor
+}
+@objcMembers @objc(AIRChatPanelConfiguration) public class ChatPanelConfiguration : ObjectiveC.NSObject {
+  @objcMembers @objc(AIRChatPanelStrings) public class Strings : ObjectiveC.NSObject {
+    @objc public var joinButton: Swift.String
+    @objc public var joiningButton: Swift.String
+    @objc public var joinButtonTooltip: Swift.String
+    @objc public var leaveButton: Swift.String
+    @objc public var retryButton: Swift.String
+    @objc public var emptyChatTitle: Swift.String
+    @objc public var emptyChatJoinedSubtitle: Swift.String
+    @objc public var emptyChatNotJoinedSubtitle: Swift.String
+    @objc public var genericErrorLabel: Swift.String
+    @objc public var composerPlaceholder: Swift.String
+    @objc public init(joinButton: Swift.String = "Join", joiningButton: Swift.String = "Joining...", joinButtonTooltip: Swift.String = "Tap Join to start the chat session", leaveButton: Swift.String = "Leave", retryButton: Swift.String = "Retry", emptyChatTitle: Swift.String = "No messages yet", emptyChatJoinedSubtitle: Swift.String = "Be the first one to say something", emptyChatNotJoinedSubtitle: Swift.String = "Tap \"Join\" and be the first one to say something", genericErrorLabel: Swift.String = "Something went wrong...", composerPlaceholder: Swift.String = "Send a message")
+    @objc deinit
+  }
+  @objcMembers @objc(AIRChatPanelCollapsedStateOptions) public class CollapsedStateOptions : ObjectiveC.NSObject {
+    @objc public var panelTitle: Swift.String?
+    @objc public var panelSubtitle: Swift.String?
+    @objc public var joinButton: Swift.String?
+    @objc public var joiningButton: Swift.String?
+    @objc public var leaveButton: Swift.String?
+    @objc public init(panelTitle: Swift.String? = nil, panelSubtitle: Swift.String? = nil, joinButton: Swift.String? = nil, joiningButton: Swift.String? = nil, leaveButton: Swift.String? = nil)
+    @objc deinit
+  }
+  @objcMembers @objc(AIRChatPanelMessageOptions) public class MessageOptions : ObjectiveC.NSObject {
+    @objc public var leftAligned: Swift.Bool
+    @objc public var showAvatar: Swift.Bool
+    @objc public var showUserName: Swift.Bool
+    @objc public init(leftAligned: Swift.Bool = true, showAvatar: Swift.Bool = true, showUserName: Swift.Bool = true)
+    @objc deinit
+  }
+  @objcMembers @objc(AIRChatPanelExpandedStateOptions) public class ExpandedStateOptions : ObjectiveC.NSObject {
+    @objc public var panelTitle: Swift.String?
+    @objc public var panelSubtitle: Swift.String?
+    @objc public var joinButton: Swift.String?
+    @objc public var joiningButton: Swift.String?
+    @objc public var leaveButton: Swift.String?
+    @objc public var reversed: Swift.Bool
+    @objc public var incomingMessage: AircoreChatPanel.ChatPanelConfiguration.MessageOptions
+    @objc public var outgoingMessage: AircoreChatPanel.ChatPanelConfiguration.MessageOptions
+    @objc public init(panelTitle: Swift.String? = nil, panelSubtitle: Swift.String? = nil, joinButton: Swift.String? = nil, joiningButton: Swift.String? = nil, leaveButton: Swift.String? = nil, reversed: Swift.Bool = false, incomingMessage: AircoreChatPanel.ChatPanelConfiguration.MessageOptions = MessageOptions(leftAligned: true, showAvatar: true, showUserName: true), outgoingMessage: AircoreChatPanel.ChatPanelConfiguration.MessageOptions = MessageOptions(leftAligned: false, showAvatar: false, showUserName: false))
+    @objc deinit
+  }
+  @objc public var panelTitle: Swift.String?
+  @objc public var panelSubtitle: Swift.String?
+  @objc public var previewBeforeJoin: Swift.Bool
+  @objc public var showActiveUsers: Swift.Bool
+  @objc public var canSendMessage: Swift.Bool
+  @objc public var maxCharactersLimit: Swift.Int
+  @objc public var enableAutoScroll: Swift.Bool
+  @objc public var autoScrollOffset: Swift.Int
+  @objc public var strings: AircoreChatPanel.ChatPanelConfiguration.Strings
+  @objc public var collapsedStateOptions: AircoreChatPanel.ChatPanelConfiguration.CollapsedStateOptions
+  @objc public var expandedStateOptions: AircoreChatPanel.ChatPanelConfiguration.ExpandedStateOptions
+  @objc public init(panelTitle: Swift.String? = nil, panelSubtitle: Swift.String? = nil, previewBeforeJoin: Swift.Bool = true, showActiveUsers: Swift.Bool = true, canSendMessage: Swift.Bool = true, maxCharactersLimit: Swift.Int = 1000, enableAutoScroll: Swift.Bool = true, autoScrollOffset: Swift.Int = 1, strings: AircoreChatPanel.ChatPanelConfiguration.Strings = Strings(), collapsedStateOptions: AircoreChatPanel.ChatPanelConfiguration.CollapsedStateOptions = CollapsedStateOptions(), expandedStateOptions: AircoreChatPanel.ChatPanelConfiguration.ExpandedStateOptions = ExpandedStateOptions())
+  @objc public static func defaultConfiguration() -> AircoreChatPanel.ChatPanelConfiguration
+  @objc deinit
+}
+extension AircoreChatPanel.ChatAuth.AuthType : Swift.Equatable {}
+extension AircoreChatPanel.ChatAuth.AuthType : Swift.Hashable {}
+extension AircoreChatPanel.ChatEnvironment : Swift.Equatable {}
+extension AircoreChatPanel.ChatEnvironment : Swift.Hashable {}
+extension AircoreChatPanel.ClientEvent : Swift.Equatable {}
+extension AircoreChatPanel.ClientEvent : Swift.Hashable {}
+extension AircoreChatPanel.ClientEvent : Swift.RawRepresentable {}
+extension AircoreChatPanel.ClientLogLevel : Swift.Equatable {}
+extension AircoreChatPanel.ClientLogLevel : Swift.Hashable {}
+extension AircoreChatPanel.ClientLogLevel : Swift.RawRepresentable {}
+extension AircoreChatPanel.ChatPanelStyle : Swift.Equatable {}
+extension AircoreChatPanel.ChatPanelStyle : Swift.Hashable {}
+extension AircoreChatPanel.ChatPanelStyle : Swift.RawRepresentable {}

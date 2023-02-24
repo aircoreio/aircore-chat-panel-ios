@@ -1,0 +1,4094 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AircorePresenceCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AircorePresenceCore"
+      },
+      {
+        "kind": "Import",
+        "name": "presence",
+        "printedName": "presence",
+        "declKind": "Import",
+        "moduleName": "AircorePresenceCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PresenceAuth",
+        "printedName": "PresenceAuth",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pak",
+            "printedName": "pak",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AircorePresenceCore.PresenceAuth.Type) -> (Swift.String, Swift.String, Swift.String) -> AircorePresenceCore.PresenceAuth",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String, Swift.String) -> AircorePresenceCore.PresenceAuth",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PresenceAuth",
+                        "printedName": "AircorePresenceCore.PresenceAuth",
+                        "usr": "s:19AircorePresenceCore0B4AuthO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, userID: Swift.String, channelID: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AircorePresenceCore.PresenceAuth.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PresenceAuth",
+                        "printedName": "AircorePresenceCore.PresenceAuth",
+                        "usr": "s:19AircorePresenceCore0B4AuthO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19AircorePresenceCore0B4AuthO3pakyACSS_S2StcACmF",
+            "mangledName": "$s19AircorePresenceCore0B4AuthO3pakyACSS_S2StcACmF",
+            "moduleName": "AircorePresenceCore"
+          },
+          {
+            "kind": "Var",
+            "name": "sat",
+            "printedName": "sat",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AircorePresenceCore.PresenceAuth.Type) -> (Swift.String, Swift.String) -> AircorePresenceCore.PresenceAuth",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String) -> AircorePresenceCore.PresenceAuth",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PresenceAuth",
+                        "printedName": "AircorePresenceCore.PresenceAuth",
+                        "usr": "s:19AircorePresenceCore0B4AuthO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, userID: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AircorePresenceCore.PresenceAuth.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PresenceAuth",
+                        "printedName": "AircorePresenceCore.PresenceAuth",
+                        "usr": "s:19AircorePresenceCore0B4AuthO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19AircorePresenceCore0B4AuthO3satyACSS_SStcACmF",
+            "mangledName": "$s19AircorePresenceCore0B4AuthO3satyACSS_SStcACmF",
+            "moduleName": "AircorePresenceCore"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:19AircorePresenceCore0B4AuthO",
+        "mangledName": "$s19AircorePresenceCore0B4AuthO",
+        "moduleName": "AircorePresenceCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Environment",
+        "printedName": "Environment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "staging",
+            "printedName": "staging",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AircorePresenceCore.Environment.Type) -> AircorePresenceCore.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "AircorePresenceCore.Environment",
+                    "usr": "s:19AircorePresenceCore11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AircorePresenceCore.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "AircorePresenceCore.Environment",
+                        "usr": "s:19AircorePresenceCore11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19AircorePresenceCore11EnvironmentO7stagingyA2CmF",
+            "mangledName": "$s19AircorePresenceCore11EnvironmentO7stagingyA2CmF",
+            "moduleName": "AircorePresenceCore"
+          },
+          {
+            "kind": "Var",
+            "name": "prod",
+            "printedName": "prod",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AircorePresenceCore.Environment.Type) -> AircorePresenceCore.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "AircorePresenceCore.Environment",
+                    "usr": "s:19AircorePresenceCore11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AircorePresenceCore.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "AircorePresenceCore.Environment",
+                        "usr": "s:19AircorePresenceCore11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:19AircorePresenceCore11EnvironmentO4prodyA2CmF",
+            "mangledName": "$s19AircorePresenceCore11EnvironmentO4prodyA2CmF",
+            "moduleName": "AircorePresenceCore"
+          },
+          {
+            "kind": "Var",
+            "name": "provisioningServiceURL",
+            "printedName": "provisioningServiceURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore11EnvironmentO22provisioningServiceURLSSvp",
+            "mangledName": "$s19AircorePresenceCore11EnvironmentO22provisioningServiceURLSSvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore11EnvironmentO22provisioningServiceURLSSvg",
+                "mangledName": "$s19AircorePresenceCore11EnvironmentO22provisioningServiceURLSSvg",
+                "moduleName": "AircorePresenceCore",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiURL",
+            "printedName": "apiURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore11EnvironmentO6apiURLSSvp",
+            "mangledName": "$s19AircorePresenceCore11EnvironmentO6apiURLSSvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore11EnvironmentO6apiURLSSvg",
+                "mangledName": "$s19AircorePresenceCore11EnvironmentO6apiURLSSvg",
+                "moduleName": "AircorePresenceCore",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "AircorePresenceCore.Environment",
+                "usr": "s:19AircorePresenceCore11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "AircorePresenceCore.Environment",
+                "usr": "s:19AircorePresenceCore11EnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore11EnvironmentO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s19AircorePresenceCore11EnvironmentO2eeoiySbAC_ACtFZ",
+            "moduleName": "AircorePresenceCore",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore11EnvironmentO9hashValueSivp",
+            "mangledName": "$s19AircorePresenceCore11EnvironmentO9hashValueSivp",
+            "moduleName": "AircorePresenceCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore11EnvironmentO9hashValueSivg",
+                "mangledName": "$s19AircorePresenceCore11EnvironmentO9hashValueSivg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore11EnvironmentO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s19AircorePresenceCore11EnvironmentO4hash4intoys6HasherVz_tF",
+            "moduleName": "AircorePresenceCore",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:19AircorePresenceCore11EnvironmentO",
+        "mangledName": "$s19AircorePresenceCore11EnvironmentO",
+        "moduleName": "AircorePresenceCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LinkPresenceEngine",
+        "printedName": "LinkPresenceEngine",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "environment",
+            "printedName": "environment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "AircorePresenceCore.Environment",
+                "usr": "s:19AircorePresenceCore11EnvironmentO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC11environmentAA11EnvironmentOvp",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC11environmentAA11EnvironmentOvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "AircorePresenceCore.Environment",
+                    "usr": "s:19AircorePresenceCore11EnvironmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore04LinkB6EngineC11environmentAA11EnvironmentOvg",
+                "mangledName": "$s19AircorePresenceCore04LinkB6EngineC11environmentAA11EnvironmentOvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "auth",
+            "printedName": "auth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresenceAuth",
+                "printedName": "AircorePresenceCore.PresenceAuth",
+                "usr": "s:19AircorePresenceCore0B4AuthO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC4authAA0B4AuthOvp",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC4authAA0B4AuthOvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresenceAuth",
+                    "printedName": "AircorePresenceCore.PresenceAuth",
+                    "usr": "s:19AircorePresenceCore0B4AuthO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore04LinkB6EngineC4authAA0B4AuthOvg",
+                "mangledName": "$s19AircorePresenceCore04LinkB6EngineC4authAA0B4AuthOvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC4nameSSvp",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC4nameSSvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore04LinkB6EngineC4nameSSvg",
+                "mangledName": "$s19AircorePresenceCore04LinkB6EngineC4nameSSvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "avatarURL",
+            "printedName": "avatarURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC9avatarURL10Foundation0G0VSgvp",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC9avatarURL10Foundation0G0VSgvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore04LinkB6EngineC9avatarURL10Foundation0G0VSgvg",
+                "mangledName": "$s19AircorePresenceCore04LinkB6EngineC9avatarURL10Foundation0G0VSgvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "canPublishAudio",
+            "printedName": "canPublishAudio",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC15canPublishAudioSbvp",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC15canPublishAudioSbvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore04LinkB6EngineC15canPublishAudioSbvg",
+                "mangledName": "$s19AircorePresenceCore04LinkB6EngineC15canPublishAudioSbvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(environment:auth:name:avatarURL:canPublishAudio:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LinkPresenceEngine",
+                "printedName": "AircorePresenceCore.LinkPresenceEngine",
+                "usr": "s:19AircorePresenceCore04LinkB6EngineC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "AircorePresenceCore.Environment",
+                "hasDefaultArg": true,
+                "usr": "s:19AircorePresenceCore11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresenceAuth",
+                "printedName": "AircorePresenceCore.PresenceAuth",
+                "usr": "s:19AircorePresenceCore0B4AuthO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC11environment4auth4name9avatarURL15canPublishAudioAcA11EnvironmentO_AA0B4AuthOSS10Foundation0J0VSgSbtcfc",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC11environment4auth4name9avatarURL15canPublishAudioAcA11EnvironmentO_AA0B4AuthOSS10Foundation0J0VSgSbtcfc",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC5startyyF",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC5startyyF",
+            "moduleName": "AircorePresenceCore",
+            "overriding": true,
+            "declAttributes": [
+              "Final",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC4stopyyF",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC4stopyyF",
+            "moduleName": "AircorePresenceCore",
+            "overriding": true,
+            "declAttributes": [
+              "Final",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LinkPresenceEngine",
+                "printedName": "AircorePresenceCore.LinkPresenceEngine",
+                "usr": "s:19AircorePresenceCore04LinkB6EngineC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineCACycfc",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineCACycfc",
+            "moduleName": "AircorePresenceCore",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "onUpdate",
+            "printedName": "onUpdate(result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CommonResource",
+                "printedName": "presence.CommonResource<presence.Result>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "presence.Result",
+                    "usr": "c:objc(cs)PresenceResult"
+                  }
+                ],
+                "usr": "c:objc(cs)PresenceCommonResource"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC8onUpdate6resultySo0B14CommonResourceCySo0B6ResultCG_tF",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC8onUpdate6resultySo0B14CommonResourceCySo0B6ResultCG_tF",
+            "moduleName": "AircorePresenceCore",
+            "objc_name": "onUpdateResult:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onTokenExpired",
+            "printedName": "onTokenExpired()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC14onTokenExpiredyyF",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC14onTokenExpiredyyF",
+            "moduleName": "AircorePresenceCore",
+            "objc_name": "onTokenExpired",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onTokenInvalid",
+            "printedName": "onTokenInvalid()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC14onTokenInvalidyyF",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC14onTokenInvalidyyF",
+            "moduleName": "AircorePresenceCore",
+            "objc_name": "onTokenInvalid",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onTokenNearingExpiry",
+            "printedName": "onTokenNearingExpiry(duration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC20onTokenNearingExpiry8durationys5Int32V_tF",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC20onTokenNearingExpiry8durationys5Int32V_tF",
+            "moduleName": "AircorePresenceCore",
+            "objc_name": "onTokenNearingExpiryDuration:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(status:code:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "presence.KotlinInt?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinInt",
+                    "printedName": "presence.KotlinInt",
+                    "usr": "c:objc(cs)PresenceInt"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC7onError6status4code7messageySo0B3IntCSg_SSSgAKtF",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC7onError6status4code7messageySo0B3IntCSg_SSSgAKtF",
+            "moduleName": "AircorePresenceCore",
+            "objc_name": "onErrorStatus:code:message:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onToken",
+            "printedName": "onToken(token:expiresAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "presence.KotlinInt?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KotlinInt",
+                    "printedName": "presence.KotlinInt",
+                    "usr": "c:objc(cs)PresenceInt"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC7onToken5token9expiresAtySS_So0B3IntCSgtF",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC7onToken5token9expiresAtySS_So0B3IntCSgtF",
+            "moduleName": "AircorePresenceCore",
+            "objc_name": "onTokenToken:expiresAt:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onLoading",
+            "printedName": "onLoading()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC9onLoadingyyF",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC9onLoadingyyF",
+            "moduleName": "AircorePresenceCore",
+            "objc_name": "onLoading",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSuccess",
+            "printedName": "onSuccess(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore04LinkB6EngineC9onSuccess4datayypSg_tF",
+            "mangledName": "$s19AircorePresenceCore04LinkB6EngineC9onSuccess4datayypSg_tF",
+            "moduleName": "AircorePresenceCore",
+            "objc_name": "onSuccessData:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19AircorePresenceCore04LinkB6EngineC",
+        "mangledName": "$s19AircorePresenceCore04LinkB6EngineC",
+        "moduleName": "AircorePresenceCore",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "superclassUsr": "s:19AircorePresenceCore0B6EngineC",
+        "superclassNames": [
+          "AircorePresenceCore.PresenceEngine"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AircorePresenceCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PresenceUser",
+        "printedName": "PresenceUser",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B4UserC2idSSvp",
+            "mangledName": "$s19AircorePresenceCore0B4UserC2idSSvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC2idSSvg",
+                "mangledName": "$s19AircorePresenceCore0B4UserC2idSSvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B4UserC4nameSSvp",
+            "mangledName": "$s19AircorePresenceCore0B4UserC4nameSSvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC4nameSSvg",
+                "mangledName": "$s19AircorePresenceCore0B4UserC4nameSSvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC4nameSSvs",
+                "mangledName": "$s19AircorePresenceCore0B4UserC4nameSSvs",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC4nameSSvM",
+                "mangledName": "$s19AircorePresenceCore0B4UserC4nameSSvM",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$name",
+            "printedName": "$name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.String>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B4UserC5$name7Combine9PublishedV9PublisherVySS_Gvp",
+            "mangledName": "$s19AircorePresenceCore0B4UserC5$name7Combine9PublishedV9PublisherVySS_Gvp",
+            "moduleName": "AircorePresenceCore",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.String>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC5$name7Combine9PublishedV9PublisherVySS_Gvg",
+                "mangledName": "$s19AircorePresenceCore0B4UserC5$name7Combine9PublishedV9PublisherVySS_Gvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.String>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC5$name7Combine9PublishedV9PublisherVySS_Gvs",
+                "mangledName": "$s19AircorePresenceCore0B4UserC5$name7Combine9PublishedV9PublisherVySS_Gvs",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC5$name7Combine9PublishedV9PublisherVySS_GvM",
+                "mangledName": "$s19AircorePresenceCore0B4UserC5$name7Combine9PublishedV9PublisherVySS_GvM",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "avatarURL",
+            "printedName": "avatarURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B4UserC9avatarURL10Foundation0F0VSgvp",
+            "mangledName": "$s19AircorePresenceCore0B4UserC9avatarURL10Foundation0F0VSgvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC9avatarURL10Foundation0F0VSgvg",
+                "mangledName": "$s19AircorePresenceCore0B4UserC9avatarURL10Foundation0F0VSgvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC9avatarURL10Foundation0F0VSgvs",
+                "mangledName": "$s19AircorePresenceCore0B4UserC9avatarURL10Foundation0F0VSgvs",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC9avatarURL10Foundation0F0VSgvM",
+                "mangledName": "$s19AircorePresenceCore0B4UserC9avatarURL10Foundation0F0VSgvM",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$avatarURL",
+            "printedName": "$avatarURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Optional<Foundation.URL>>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B4UserC10$avatarURL7Combine9PublishedV9PublisherVy10Foundation0F0VSg_Gvp",
+            "mangledName": "$s19AircorePresenceCore0B4UserC10$avatarURL7Combine9PublishedV9PublisherVy10Foundation0F0VSg_Gvp",
+            "moduleName": "AircorePresenceCore",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<Foundation.URL>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC10$avatarURL7Combine9PublishedV9PublisherVy10Foundation0F0VSg_Gvg",
+                "mangledName": "$s19AircorePresenceCore0B4UserC10$avatarURL7Combine9PublishedV9PublisherVy10Foundation0F0VSg_Gvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<Foundation.URL>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC10$avatarURL7Combine9PublishedV9PublisherVy10Foundation0F0VSg_Gvs",
+                "mangledName": "$s19AircorePresenceCore0B4UserC10$avatarURL7Combine9PublishedV9PublisherVy10Foundation0F0VSg_Gvs",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC10$avatarURL7Combine9PublishedV9PublisherVy10Foundation0F0VSg_GvM",
+                "mangledName": "$s19AircorePresenceCore0B4UserC10$avatarURL7Combine9PublishedV9PublisherVy10Foundation0F0VSg_GvM",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "joinedSessionAt",
+            "printedName": "joinedSessionAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B4UserC15joinedSessionAt10Foundation4DateVvp",
+            "mangledName": "$s19AircorePresenceCore0B4UserC15joinedSessionAt10Foundation4DateVvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC15joinedSessionAt10Foundation4DateVvg",
+                "mangledName": "$s19AircorePresenceCore0B4UserC15joinedSessionAt10Foundation4DateVvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC15joinedSessionAt10Foundation4DateVvs",
+                "mangledName": "$s19AircorePresenceCore0B4UserC15joinedSessionAt10Foundation4DateVvs",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC15joinedSessionAt10Foundation4DateVvM",
+                "mangledName": "$s19AircorePresenceCore0B4UserC15joinedSessionAt10Foundation4DateVvM",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$joinedSessionAt",
+            "printedName": "$joinedSessionAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Foundation.Date>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B4UserC16$joinedSessionAt7Combine9PublishedV9PublisherVy10Foundation4DateV_Gvp",
+            "mangledName": "$s19AircorePresenceCore0B4UserC16$joinedSessionAt7Combine9PublishedV9PublisherVy10Foundation4DateV_Gvp",
+            "moduleName": "AircorePresenceCore",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Foundation.Date>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC16$joinedSessionAt7Combine9PublishedV9PublisherVy10Foundation4DateV_Gvg",
+                "mangledName": "$s19AircorePresenceCore0B4UserC16$joinedSessionAt7Combine9PublishedV9PublisherVy10Foundation4DateV_Gvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Foundation.Date>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC16$joinedSessionAt7Combine9PublishedV9PublisherVy10Foundation4DateV_Gvs",
+                "mangledName": "$s19AircorePresenceCore0B4UserC16$joinedSessionAt7Combine9PublishedV9PublisherVy10Foundation4DateV_Gvs",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC16$joinedSessionAt7Combine9PublishedV9PublisherVy10Foundation4DateV_GvM",
+                "mangledName": "$s19AircorePresenceCore0B4UserC16$joinedSessionAt7Combine9PublishedV9PublisherVy10Foundation4DateV_GvM",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "canPublishAudio",
+            "printedName": "canPublishAudio",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B4UserC15canPublishAudioSbvp",
+            "mangledName": "$s19AircorePresenceCore0B4UserC15canPublishAudioSbvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC15canPublishAudioSbvg",
+                "mangledName": "$s19AircorePresenceCore0B4UserC15canPublishAudioSbvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC15canPublishAudioSbvs",
+                "mangledName": "$s19AircorePresenceCore0B4UserC15canPublishAudioSbvs",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC15canPublishAudioSbvM",
+                "mangledName": "$s19AircorePresenceCore0B4UserC15canPublishAudioSbvM",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$canPublishAudio",
+            "printedName": "$canPublishAudio",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B4UserC16$canPublishAudio7Combine9PublishedV9PublisherVySb_Gvp",
+            "mangledName": "$s19AircorePresenceCore0B4UserC16$canPublishAudio7Combine9PublishedV9PublisherVySb_Gvp",
+            "moduleName": "AircorePresenceCore",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC16$canPublishAudio7Combine9PublishedV9PublisherVySb_Gvg",
+                "mangledName": "$s19AircorePresenceCore0B4UserC16$canPublishAudio7Combine9PublishedV9PublisherVySb_Gvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC16$canPublishAudio7Combine9PublishedV9PublisherVySb_Gvs",
+                "mangledName": "$s19AircorePresenceCore0B4UserC16$canPublishAudio7Combine9PublishedV9PublisherVySb_Gvs",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC16$canPublishAudio7Combine9PublishedV9PublisherVySb_GvM",
+                "mangledName": "$s19AircorePresenceCore0B4UserC16$canPublishAudio7Combine9PublishedV9PublisherVySb_GvM",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isPublishing",
+            "printedName": "isPublishing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B4UserC12isPublishingSbvp",
+            "mangledName": "$s19AircorePresenceCore0B4UserC12isPublishingSbvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC12isPublishingSbvg",
+                "mangledName": "$s19AircorePresenceCore0B4UserC12isPublishingSbvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC12isPublishingSbvs",
+                "mangledName": "$s19AircorePresenceCore0B4UserC12isPublishingSbvs",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC12isPublishingSbvM",
+                "mangledName": "$s19AircorePresenceCore0B4UserC12isPublishingSbvM",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$isPublishing",
+            "printedName": "$isPublishing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B4UserC13$isPublishing7Combine9PublishedV9PublisherVySb_Gvp",
+            "mangledName": "$s19AircorePresenceCore0B4UserC13$isPublishing7Combine9PublishedV9PublisherVySb_Gvp",
+            "moduleName": "AircorePresenceCore",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC13$isPublishing7Combine9PublishedV9PublisherVySb_Gvg",
+                "mangledName": "$s19AircorePresenceCore0B4UserC13$isPublishing7Combine9PublishedV9PublisherVySb_Gvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Bool>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC13$isPublishing7Combine9PublishedV9PublisherVySb_Gvs",
+                "mangledName": "$s19AircorePresenceCore0B4UserC13$isPublishing7Combine9PublishedV9PublisherVySb_Gvs",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC13$isPublishing7Combine9PublishedV9PublisherVySb_GvM",
+                "mangledName": "$s19AircorePresenceCore0B4UserC13$isPublishing7Combine9PublishedV9PublisherVySb_GvM",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:name:avatarURL:canPublishAudio:joinedSessionAt:isPublishing:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresenceUser",
+                "printedName": "AircorePresenceCore.PresenceUser",
+                "usr": "s:19AircorePresenceCore0B4UserC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "hasDefaultArg": true,
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19AircorePresenceCore0B4UserC2id4name9avatarURL15canPublishAudio15joinedSessionAt12isPublishingACSS_SS10Foundation0H0VSgSbAJ4DateVSbtcfc",
+            "mangledName": "$s19AircorePresenceCore0B4UserC2id4name9avatarURL15canPublishAudio15joinedSessionAt12isPublishingACSS_SS10Foundation0H0VSgSbAJ4DateVSbtcfc",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresenceUser",
+                "printedName": "AircorePresenceCore.PresenceUser",
+                "usr": "s:19AircorePresenceCore0B4UserC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresenceUser",
+                "printedName": "AircorePresenceCore.PresenceUser",
+                "usr": "s:19AircorePresenceCore0B4UserC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore0B4UserC2eeoiySbAC_ACtFZ",
+            "mangledName": "$s19AircorePresenceCore0B4UserC2eeoiySbAC_ACtFZ",
+            "moduleName": "AircorePresenceCore",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore0B4UserC4hash4intoys6HasherVz_tF",
+            "mangledName": "$s19AircorePresenceCore0B4UserC4hash4intoys6HasherVz_tF",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B4UserC9hashValueSivp",
+            "mangledName": "$s19AircorePresenceCore0B4UserC9hashValueSivp",
+            "moduleName": "AircorePresenceCore",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC9hashValueSivg",
+                "mangledName": "$s19AircorePresenceCore0B4UserC9hashValueSivg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debugDescription",
+            "printedName": "debugDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B4UserC16debugDescriptionSSvp",
+            "mangledName": "$s19AircorePresenceCore0B4UserC16debugDescriptionSSvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B4UserC16debugDescriptionSSvg",
+                "mangledName": "$s19AircorePresenceCore0B4UserC16debugDescriptionSSvg",
+                "moduleName": "AircorePresenceCore",
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19AircorePresenceCore0B4UserC",
+        "mangledName": "$s19AircorePresenceCore0B4UserC",
+        "moduleName": "AircorePresenceCore",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AircorePresenceCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AircorePresenceCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PresenceEngine",
+        "printedName": "PresenceEngine",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Event",
+            "printedName": "Event",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "userJoined",
+                "printedName": "userJoined",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Event.Type) -> (AircorePresenceCore.PresenceUser) -> AircorePresenceCore.PresenceEngine.Event",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(AircorePresenceCore.PresenceUser) -> AircorePresenceCore.PresenceEngine.Event",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                            "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PresenceUser",
+                            "printedName": "AircorePresenceCore.PresenceUser",
+                            "usr": "s:19AircorePresenceCore0B4UserC"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                            "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC5EventO10userJoinedyAeA0B4UserCcAEmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC5EventO10userJoinedyAeA0B4UserCcAEmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "userLeft",
+                "printedName": "userLeft",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Event.Type) -> (Swift.String) -> AircorePresenceCore.PresenceEngine.Event",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> AircorePresenceCore.PresenceEngine.Event",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                            "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                            "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC5EventO8userLeftyAESScAEmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC5EventO8userLeftyAESScAEmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "userMetadataUpdated",
+                "printedName": "userMetadataUpdated",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Event.Type) -> (AircorePresenceCore.PresenceUser) -> AircorePresenceCore.PresenceEngine.Event",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(AircorePresenceCore.PresenceUser) -> AircorePresenceCore.PresenceEngine.Event",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                            "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PresenceUser",
+                            "printedName": "AircorePresenceCore.PresenceUser",
+                            "usr": "s:19AircorePresenceCore0B4UserC"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                            "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC5EventO19userMetadataUpdatedyAeA0B4UserCcAEmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC5EventO19userMetadataUpdatedyAeA0B4UserCcAEmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "tokenExpired",
+                "printedName": "tokenExpired",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Event.Type) -> AircorePresenceCore.PresenceEngine.Event",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Event",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                        "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                            "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC5EventO12tokenExpiredyA2EmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC5EventO12tokenExpiredyA2EmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "tokenInvalid",
+                "printedName": "tokenInvalid",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Event.Type) -> AircorePresenceCore.PresenceEngine.Event",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Event",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                        "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                            "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC5EventO12tokenInvalidyA2EmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC5EventO12tokenInvalidyA2EmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "tokenNearingExpiry",
+                "printedName": "tokenNearingExpiry",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Event.Type) -> (Swift.Int32) -> AircorePresenceCore.PresenceEngine.Event",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Int32) -> AircorePresenceCore.PresenceEngine.Event",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                            "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int32",
+                            "printedName": "Swift.Int32",
+                            "usr": "s:s5Int32V"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                            "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC5EventO18tokenNearingExpiryyAEs5Int32VcAEmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC5EventO18tokenNearingExpiryyAEs5Int32VcAEmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "onError",
+                "printedName": "onError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Event.Type) -> (Swift.String?, Swift.String?) -> AircorePresenceCore.PresenceEngine.Event",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String?, Swift.String?) -> AircorePresenceCore.PresenceEngine.Event",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                            "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.String?, Swift.String?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "Swift.String?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                            "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC5EventO7onErroryAESSSg_AGtcAEmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC5EventO7onErroryAESSSg_AGtcAEmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "debugDescription",
+                "printedName": "debugDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:19AircorePresenceCore0B6EngineC5EventO16debugDescriptionSSvp",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC5EventO16debugDescriptionSSvp",
+                "moduleName": "AircorePresenceCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:19AircorePresenceCore0B6EngineC5EventO16debugDescriptionSSvg",
+                    "mangledName": "$s19AircorePresenceCore0B6EngineC5EventO16debugDescriptionSSvg",
+                    "moduleName": "AircorePresenceCore",
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:19AircorePresenceCore0B6EngineC5EventO",
+            "mangledName": "$s19AircorePresenceCore0B6EngineC5EventO",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Action",
+            "printedName": "Action",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "setOnline",
+                "printedName": "setOnline",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Action.Type) -> AircorePresenceCore.PresenceEngine.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                        "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC6ActionO9setOnlineyA2EmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC6ActionO9setOnlineyA2EmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "setOffline",
+                "printedName": "setOffline",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Action.Type) -> AircorePresenceCore.PresenceEngine.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                        "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC6ActionO10setOfflineyA2EmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC6ActionO10setOfflineyA2EmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "updateName",
+                "printedName": "updateName",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Action.Type) -> (Swift.String) -> AircorePresenceCore.PresenceEngine.Action",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> AircorePresenceCore.PresenceEngine.Action",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC6ActionO10updateNameyAESScAEmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC6ActionO10updateNameyAESScAEmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "updateAvatarURL",
+                "printedName": "updateAvatarURL",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Action.Type) -> (Foundation.URL?) -> AircorePresenceCore.PresenceEngine.Action",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Foundation.URL?) -> AircorePresenceCore.PresenceEngine.Action",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.URL?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "URL",
+                                "printedName": "Foundation.URL",
+                                "usr": "s:10Foundation3URLV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC6ActionO15updateAvatarURLyAE10Foundation0H0VSgcAEmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC6ActionO15updateAvatarURLyAE10Foundation0H0VSgcAEmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "updateCanPublishAudio",
+                "printedName": "updateCanPublishAudio",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Action.Type) -> (Swift.Bool) -> AircorePresenceCore.PresenceEngine.Action",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Bool) -> AircorePresenceCore.PresenceEngine.Action",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC6ActionO21updateCanPublishAudioyAESbcAEmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC6ActionO21updateCanPublishAudioyAESbcAEmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "setMetadata",
+                "printedName": "setMetadata",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Action.Type) -> (Swift.String, Swift.String) -> AircorePresenceCore.PresenceEngine.Action",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Swift.String) -> AircorePresenceCore.PresenceEngine.Action",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(key: Swift.String, value: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC6ActionO11setMetadatayAESS_SStcAEmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC6ActionO11setMetadatayAESS_SStcAEmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "updateSessionAccessToken",
+                "printedName": "updateSessionAccessToken",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Action.Type) -> (Swift.String) -> AircorePresenceCore.PresenceEngine.Action",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> AircorePresenceCore.PresenceEngine.Action",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC6ActionO24updateSessionAccessTokenyAESScAEmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC6ActionO24updateSessionAccessTokenyAESScAEmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "getLatestMetadata",
+                "printedName": "getLatestMetadata",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AircorePresenceCore.PresenceEngine.Action.Type) -> (Swift.String, @escaping (Swift.Result<AircorePresenceCore.PresenceUser, Swift.Error>) -> ()) -> AircorePresenceCore.PresenceEngine.Action",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, @escaping (Swift.Result<AircorePresenceCore.PresenceUser, Swift.Error>) -> ()) -> AircorePresenceCore.PresenceEngine.Action",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(userID: Swift.String, completion: (Swift.Result<AircorePresenceCore.PresenceUser, Swift.Error>) -> ())",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "(Swift.Result<AircorePresenceCore.PresenceUser, Swift.Error>) -> ()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Void",
+                                    "printedName": "()"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Result",
+                                    "printedName": "Swift.Result<AircorePresenceCore.PresenceUser, Swift.Error>",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "PresenceUser",
+                                        "printedName": "AircorePresenceCore.PresenceUser",
+                                        "usr": "s:19AircorePresenceCore0B4UserC"
+                                      },
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "Error",
+                                        "printedName": "Swift.Error",
+                                        "usr": "s:s5ErrorP"
+                                      }
+                                    ],
+                                    "usr": "s:s6ResultO"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:19AircorePresenceCore0B6EngineC6ActionO17getLatestMetadatayAESS_ys6ResultOyAA0B4UserCs5Error_pGctcAEmF",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC6ActionO17getLatestMetadatayAESS_ys6ResultOyAA0B4UserCs5Error_pGctcAEmF",
+                "moduleName": "AircorePresenceCore"
+              },
+              {
+                "kind": "Var",
+                "name": "debugDescription",
+                "printedName": "debugDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:19AircorePresenceCore0B6EngineC6ActionO16debugDescriptionSSvp",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC6ActionO16debugDescriptionSSvp",
+                "moduleName": "AircorePresenceCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:19AircorePresenceCore0B6EngineC6ActionO16debugDescriptionSSvg",
+                    "mangledName": "$s19AircorePresenceCore0B6EngineC6ActionO16debugDescriptionSSvg",
+                    "moduleName": "AircorePresenceCore",
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:19AircorePresenceCore0B6EngineC6ActionO",
+            "mangledName": "$s19AircorePresenceCore0B6EngineC6ActionO",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresenceEngine",
+                "printedName": "AircorePresenceCore.PresenceEngine",
+                "usr": "s:19AircorePresenceCore0B6EngineC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19AircorePresenceCore0B6EngineCACycfc",
+            "mangledName": "$s19AircorePresenceCore0B6EngineCACycfc",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "events",
+            "printedName": "events",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<AircorePresenceCore.PresenceEngine.Event, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Event",
+                    "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                    "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B6EngineC6events7Combine18PassthroughSubjectCyAC5EventOs5NeverOGvp",
+            "mangledName": "$s19AircorePresenceCore0B6EngineC6events7Combine18PassthroughSubjectCyAC5EventOs5NeverOGvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<AircorePresenceCore.PresenceEngine.Event, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Event",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Event",
+                        "usr": "s:19AircorePresenceCore0B6EngineC5EventO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B6EngineC6events7Combine18PassthroughSubjectCyAC5EventOs5NeverOGvg",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC6events7Combine18PassthroughSubjectCyAC5EventOs5NeverOGvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "actions",
+            "printedName": "actions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassthroughSubject",
+                "printedName": "Combine.PassthroughSubject<AircorePresenceCore.PresenceEngine.Action, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Action",
+                    "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                    "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine18PassthroughSubjectC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B6EngineC7actions7Combine18PassthroughSubjectCyAC6ActionOs5NeverOGvp",
+            "mangledName": "$s19AircorePresenceCore0B6EngineC7actions7Combine18PassthroughSubjectCyAC6ActionOs5NeverOGvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Final",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassthroughSubject",
+                    "printedName": "Combine.PassthroughSubject<AircorePresenceCore.PresenceEngine.Action, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "AircorePresenceCore.PresenceEngine.Action",
+                        "usr": "s:19AircorePresenceCore0B6EngineC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine18PassthroughSubjectC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B6EngineC7actions7Combine18PassthroughSubjectCyAC6ActionOs5NeverOGvg",
+                "mangledName": "$s19AircorePresenceCore0B6EngineC7actions7Combine18PassthroughSubjectCyAC6ActionOs5NeverOGvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore0B6EngineC5startyyF",
+            "mangledName": "$s19AircorePresenceCore0B6EngineC5startyyF",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AircorePresenceCore0B6EngineC4stopyyF",
+            "mangledName": "$s19AircorePresenceCore0B6EngineC4stopyyF",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19AircorePresenceCore0B6EngineC",
+        "mangledName": "$s19AircorePresenceCore0B6EngineC",
+        "moduleName": "AircorePresenceCore",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AircorePresenceCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AircorePresenceCore"
+      },
+      {
+        "kind": "Import",
+        "name": "CombineToolbox",
+        "printedName": "CombineToolbox",
+        "declKind": "Import",
+        "moduleName": "AircorePresenceCore",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PresenceGroup",
+        "printedName": "PresenceGroup",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "users",
+            "printedName": "users",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<AircorePresenceCore.PresenceUser>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresenceUser",
+                    "printedName": "AircorePresenceCore.PresenceUser",
+                    "usr": "s:19AircorePresenceCore0B4UserC"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B5GroupC5usersShyAA0B4UserCGvp",
+            "mangledName": "$s19AircorePresenceCore0B5GroupC5usersShyAA0B4UserCGvp",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "Final",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<AircorePresenceCore.PresenceUser>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PresenceUser",
+                        "printedName": "AircorePresenceCore.PresenceUser",
+                        "usr": "s:19AircorePresenceCore0B4UserC"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B5GroupC5usersShyAA0B4UserCGvg",
+                "mangledName": "$s19AircorePresenceCore0B5GroupC5usersShyAA0B4UserCGvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<AircorePresenceCore.PresenceUser>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PresenceUser",
+                        "printedName": "AircorePresenceCore.PresenceUser",
+                        "usr": "s:19AircorePresenceCore0B4UserC"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B5GroupC5usersShyAA0B4UserCGvs",
+                "mangledName": "$s19AircorePresenceCore0B5GroupC5usersShyAA0B4UserCGvs",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B5GroupC5usersShyAA0B4UserCGvM",
+                "mangledName": "$s19AircorePresenceCore0B5GroupC5usersShyAA0B4UserCGvM",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$users",
+            "printedName": "$users",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<Swift.Set<AircorePresenceCore.PresenceUser>>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:19AircorePresenceCore0B5GroupC6$users7Combine9PublishedV9PublisherVyShyAA0B4UserCG_Gvp",
+            "mangledName": "$s19AircorePresenceCore0B5GroupC6$users7Combine9PublishedV9PublisherVyShyAA0B4UserCG_Gvp",
+            "moduleName": "AircorePresenceCore",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Set<AircorePresenceCore.PresenceUser>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B5GroupC6$users7Combine9PublishedV9PublisherVyShyAA0B4UserCG_Gvg",
+                "mangledName": "$s19AircorePresenceCore0B5GroupC6$users7Combine9PublishedV9PublisherVyShyAA0B4UserCG_Gvg",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<Swift.Set<AircorePresenceCore.PresenceUser>>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B5GroupC6$users7Combine9PublishedV9PublisherVyShyAA0B4UserCG_Gvs",
+                "mangledName": "$s19AircorePresenceCore0B5GroupC6$users7Combine9PublishedV9PublisherVyShyAA0B4UserCG_Gvs",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AircorePresenceCore0B5GroupC6$users7Combine9PublishedV9PublisherVyShyAA0B4UserCG_GvM",
+                "mangledName": "$s19AircorePresenceCore0B5GroupC6$users7Combine9PublishedV9PublisherVyShyAA0B4UserCG_GvM",
+                "moduleName": "AircorePresenceCore",
+                "implicit": true,
+                "intro_Macosx": "11.0",
+                "intro_iOS": "14.0",
+                "intro_tvOS": "14.0",
+                "intro_watchOS": "7.0",
+                "declAttributes": [
+                  "Final",
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(users:engine:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresenceGroup",
+                "printedName": "AircorePresenceCore.PresenceGroup",
+                "usr": "s:19AircorePresenceCore0B5GroupC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<AircorePresenceCore.PresenceUser>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PresenceUser",
+                    "printedName": "AircorePresenceCore.PresenceUser",
+                    "usr": "s:19AircorePresenceCore0B4UserC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresenceEngine",
+                "printedName": "AircorePresenceCore.PresenceEngine",
+                "usr": "s:19AircorePresenceCore0B6EngineC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:19AircorePresenceCore0B5GroupC5users6engineACShyAA0B4UserCG_AA0B6EngineCtcfc",
+            "mangledName": "$s19AircorePresenceCore0B5GroupC5users6engineACShyAA0B4UserCG_AA0B6EngineCtcfc",
+            "moduleName": "AircorePresenceCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:19AircorePresenceCore0B5GroupC",
+        "mangledName": "$s19AircorePresenceCore0B5GroupC",
+        "moduleName": "AircorePresenceCore",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/hernan\/Work\/aircore-panel-sdk-ios\/AirtimePlatform\/AircorePresenceCore\/LinkPresenceEngine.swift",
+      "kind": "Array",
+      "offset": 870,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hernan\/Work\/aircore-panel-sdk-ios\/AirtimePlatform\/AircorePresenceCore\/LinkPresenceEngine.swift",
+      "kind": "Array",
+      "offset": 1188,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hernan\/Work\/aircore-panel-sdk-ios\/AirtimePlatform\/AircorePresenceCore\/LinkPresenceEngine.swift",
+      "kind": "Dictionary",
+      "offset": 1248,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hernan\/Work\/aircore-panel-sdk-ios\/AirtimePlatform\/AircorePresenceCore\/LinkPresenceEngine.swift",
+      "kind": "Dictionary",
+      "offset": 1335,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hernan\/Work\/aircore-panel-sdk-ios\/AirtimePlatform\/AircorePresenceCore\/LinkPresenceEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1506,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/hernan\/Work\/aircore-panel-sdk-ios\/AirtimePlatform\/AircorePresenceCore\/LinkPresenceEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 781,
+      "length": 18,
+      "value": "\"AircorePresenceCore.LinkPresenceEngine\""
+    },
+    {
+      "filePath": "\/Users\/hernan\/Work\/aircore-panel-sdk-ios\/AirtimePlatform\/AircorePresenceCore\/LinkPresenceEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4966,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hernan\/Work\/aircore-panel-sdk-ios\/AirtimePlatform\/AircorePresenceCore\/LinkPresenceEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 10790,
+      "length": 11,
+      "value": "\"avatarUrl\""
+    },
+    {
+      "filePath": "\/Users\/hernan\/Work\/aircore-panel-sdk-ios\/AirtimePlatform\/AircorePresenceCore\/LinkPresenceEngine.swift",
+      "kind": "StringLiteral",
+      "offset": 10790,
+      "length": 11,
+      "value": "\"avatarUrl\""
+    },
+    {
+      "filePath": "\/Users\/hernan\/Work\/aircore-panel-sdk-ios\/AirtimePlatform\/AircorePresenceCore\/PresenceUser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 569,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/hernan\/Work\/aircore-panel-sdk-ios\/AirtimePlatform\/AircorePresenceCore\/PresenceGroup.swift",
+      "kind": "Array",
+      "offset": 422,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/hernan\/Work\/aircore-panel-sdk-ios\/AirtimePlatform\/AircorePresenceCore\/PresenceGroup.swift",
+      "kind": "Array",
+      "offset": 469,
+      "length": 2,
+      "value": "[]"
+    }
+  ]
+}

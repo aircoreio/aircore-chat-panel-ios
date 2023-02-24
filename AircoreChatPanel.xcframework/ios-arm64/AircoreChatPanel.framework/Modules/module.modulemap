@@ -1,0 +1,11 @@
+framework module AircoreChatPanel {
+  umbrella header "AircoreChatPanel.h"
+
+  export *
+  module * { export * }
+}
+
+module AircoreChatPanel.Swift {
+  header "AircoreChatPanel-Swift.h"
+  requires objc
+}

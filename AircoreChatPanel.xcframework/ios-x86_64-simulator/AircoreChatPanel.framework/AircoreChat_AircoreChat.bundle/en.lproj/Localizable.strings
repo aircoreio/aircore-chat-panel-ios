@@ -1,0 +1,38 @@
+"chat.row.info.only_you_can_see_this_message" = "Only you can see this message";
+"chat.row.info.date.today" = "Today";
+"chat.row.info.date.yesterday" = "Yesterday";
+"chat.row.media.vevo" = "Vevo";
+"chat.row.media.youtube" = "YouTube";
+"chat.row.media.movie" = "Movie";
+"chat.row.media.twitch" = "Twitch";
+"chat.row.media.twitter" = "Twitter";
+"chat.row.media.spotify" = "Spotify";
+"chat.row.media.soundcloud" = "SoundCloud";
+"chat.row.media.tiktok" = "TikTok";
+"chat.row.media.twitter" = "Twitter";
+"chat.row.media.instagram" = "Instagram";
+"chat.row.media.video" = "Video";
+"chat.row.media.video.title" = "%@'s video";
+"chat.input.placeholder" = "Aa";
+"chat.input.search.placeholder" = "Search";
+"chat.joinRoom.welcome" = "Welcome to %@";
+"chat.joinRoom.joinButton" = "Join Room";
+"chat.joinRoom.joined" = "Joined";
+"chat.contextual_menu.report_message" = "Report Message";
+"chat.contextual_menu.delete_message" = "Delete Message";
+"chat.contextual_menu.pin_message" = "Pin this Message";
+"chat.contextual_menu.unpin_message" = "Unpin";
+"chat.contextual_menu.copy" = "Copy";
+"chat.pinned_message_view.pinned" = "Pinned";
+"chat.contextual_menu.react" = "React...";
+
+"chat.row.sent-state.uploading" = "Uploading";
+"chat.row.sent-state.failed" = "Failed";
+"chat.row.sent-state.flagged" = "Flagged";
+
+"chat.row.reaction.more" = "%@ More";
+
+"user.deleted_user.username" = "[deleted user]";
+
+"chat.bottom_bar.input.placeholder" = "Aa";
+"chat.bottom_bar.send_button.accesibilityLabel" = "Send";
